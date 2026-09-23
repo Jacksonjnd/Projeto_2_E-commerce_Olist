@@ -12,6 +12,18 @@ Um dos principais cuidados durante o desenvolvimento foi fazer com que o código
 
 Outro ponto importante é que cada análise foi acompanhada de uma conclusão, para que o resultado não ficasse restrito apenas ao código ou à tabela retornada. A intenção é que qualquer pessoa que consulte o portfólio consiga entender o que foi analisado, por que aquela análise foi realizada e o que o resultado representa, mesmo sem acompanhar toda a construção técnica.
 
+## Tecnologias utilizadas
+
+- SQL
+- PostgreSQL
+- DBeaver
+- Python
+- Pandas
+- Plotly
+- Jupyter Notebook
+- Git
+- GitHub
+
 ---
 
 ## Objetivo
@@ -202,6 +214,33 @@ Já a `vw_order_items_base` mantém a granularidade necessária para análises r
 Essa separação permite escolher a fonte correta dependendo da pergunta de negócio que precisa ser respondida.
 
 ---
+## Análise exploratória no Jupyter Notebook
+
+Após a etapa de exploração, validação e preparação dos dados em SQL, o projeto também foi desenvolvido em um **Jupyter Notebook**, utilizando Python para aprofundar a análise e criar visualizações dos principais indicadores encontrados.
+
+O notebook foi estruturado para manter a mesma preocupação adotada nas queries SQL: deixar claro não apenas o código executado, mas também **o objetivo de cada análise, o raciocínio utilizado e a conclusão obtida a partir dos resultados**.
+
+Foram utilizadas principalmente as bibliotecas:
+
+- **Pandas** para manipulação, tratamento e análise dos dados;
+- **Plotly** para construção das visualizações;
+- **NumPy** para cálculos e transformações auxiliares.
+
+Entre as análises desenvolvidas no notebook estão:
+
+- evolução mensal dos pedidos;
+- valor movimentado por mês;
+- evolução do ticket médio;
+- crescimento mensal dos pedidos;
+- distribuição mensal dos pedidos por ano;
+- faturamento por região;
+- comparativo de faturamento por região e ano;
+- análises complementares dos principais indicadores do e-commerce.
+
+Os gráficos também foram acompanhados de **rótulos de dados e conclusões**, permitindo que os resultados possam ser compreendidos mesmo por uma pessoa que não queira analisar todo o código utilizado na construção.
+
+A proposta do notebook não foi apenas criar gráficos, mas utilizar Python como uma segunda camada de análise, complementando o trabalho realizado em SQL e facilitando a comunicação visual dos resultados.
+
 
 # Documentação das queries
 
@@ -339,16 +378,6 @@ De forma resumida, o projeto seguiu esta sequência:
 **Dados brutos → validação → entendimento da granularidade → relacionamentos → regras de negócio → transformação → indicadores → camada analítica → interpretação**
 
 Essa estrutura foi utilizada para evitar começar diretamente pelas métricas sem antes compreender a origem dos dados.
-
----
-
-## Tecnologias utilizadas
-
-* SQL
-* PostgreSQL
-* DBeaver
-* Git
-* GitHub
 
 ---
 
