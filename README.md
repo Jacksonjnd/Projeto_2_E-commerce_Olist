@@ -8,7 +8,7 @@ Meu objetivo foi desenvolver uma análise estruturada, seguindo uma linha de rac
 
 Um dos principais cuidados durante o desenvolvimento foi fazer com que o código pudesse ser entendido não apenas por quem o escreveu, mas também por qualquer outra pessoa que tenha acesso ao projeto. Por isso, as queries foram acompanhadas de comentários, legendas, objetivo da análise, explicação do raciocínio e interpretação dos resultados.
 
-*Também fiz uma escolha consciente de não utilizar aliases curtos para os nomes das tabelas*. Como o projeto envolve várias tabelas e diversos relacionamentos, preferi manter os nomes completos para facilitar a identificação da origem de cada campo e preservar o lastro das informações durante a leitura das queries. Aliases são amplamente utilizados em SQL e podem ser muito úteis, mas, neste projeto, priorizei clareza, rastreabilidade e facilidade de entendimento.
+**Também fiz uma escolha consciente de não utilizar aliases curtos para os nomes das tabelas**. Como o projeto envolve várias tabelas e diversos relacionamentos, preferi manter os nomes completos para facilitar a identificação da origem de cada campo e preservar o lastro das informações durante a leitura das queries. Aliases são amplamente utilizados em SQL e podem ser muito úteis, mas, neste projeto, priorizei clareza, rastreabilidade e facilidade de entendimento.
 
 Outro ponto importante é que cada análise foi acompanhada de uma conclusão, para que o resultado não ficasse restrito apenas ao código ou à tabela retornada. A intenção é que qualquer pessoa que consulte o portfólio consiga entender o que foi analisado, por que aquela análise foi realizada e o que o resultado representa, mesmo sem acompanhar toda a construção técnica.
 
